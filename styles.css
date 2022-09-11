@@ -1,0 +1,154 @@
+body{
+    background-color: #fff1fd;
+    font-family:Roboto;
+}
+.header{
+    position:relative;
+    padding:1%;
+    color:white;
+    background-color: #b80065;
+}
+.name{
+    font-family:Sacramento;
+    margin:8px 16px;
+    position:absolute;
+    display: inline-block;
+}
+.nav-link{
+    color:lightgray;
+}
+.name{
+    font-family: Roboto;
+}
+.me{
+    text-align: center;
+    padding:5%;
+}
+h1{
+    font-size:70px;
+    font-family:Sacramento;
+    font-weight:bold;
+}
+
+.first{
+    position:relative;
+    text-align:center;
+    background-color:#EBC7E8;
+    color:#E80F88;
+}
+
+.mountain{
+    width:400px;
+}
+.cloud{
+    position:absolute;
+    width:200px;
+}
+
+.cloud1{
+    bottom:290px;
+    right:30px;
+}
+.cloud2{
+    left:30px;
+}
+h2{
+    color:#E80F88;
+    font-weight:600;
+}
+#about{
+    padding-top:20px;
+    text-align: center;
+}
+.mypic{
+    display: block;
+    width:175px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:87px;
+}
+.bio{
+    padding:2% 30%;
+}
+.aboutme{
+    font-size:20px;
+    color: rgb(107, 107, 107);
+}
+hr{
+    border-top: 10px dotted rgb(126, 126, 126);
+    width:15%;
+    margin:auto;
+}
+#myskills{
+    padding:3% 20%;
+    text-align: center;
+}
+.skilldiv{
+    margin-top:50px;
+    text-align: left;
+}
+.frontend{
+    font-size:17px;
+    color: rgb(107, 107, 107);
+}
+.design{
+    font-size:17px;
+    color: rgb(107, 107, 107);
+}
+h3{
+    color:#E80F88;
+    font-weight:500;
+}
+.skill-img{
+    width:100px;
+}
+.simg1{
+    margin-right:30px;
+    margin-bottom:50px;
+    float:left;
+}
+.simg2{
+    margin-left:30px;
+    float:right;
+}
+#contact{
+    margin:7% 30%;
+    text-align:center;
+}
+.contactme{
+    padding:5px 10px;
+    color:white;
+    font-size:17px;
+    background-color:#E80F88;
+    border:none;
+    border-radius:10px;
+    transition:0.3s;
+    text-decoration: none;
+}
+.contactme:hover{
+    color:rgb(60, 151, 255);
+    background-color:#c1006a;
+}
+.footer{
+    padding:1% 30%;
+    text-align: center;
+    background-color: #b80065;
+}
+.social-icons{
+    text-decoration: none;
+    color:white;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+@media (max-width:1270px){
+    .skilldiv{
+        text-align:center;
+    }
+    .simg1{
+        float:none;
+    }
+    .simg2{
+        float:none;
+    }
+}
