@@ -1,25 +1,59 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
     background-color: #fff1fd;
     font-family:Roboto;
 }
+
 .header{
-    position:relative;
-    padding:1%;
-    color:white;
+    margin:0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(61, 37, 56);
+    color:#EBC7E8;
+}
+.navbar{
+    height:40px;
+    margin: 0;
+    padding: 0;
+    display:flex;
     background-color: #b80065;
+    justify-content: flex-end;
 }
-.name{
-    font-family:Sacramento;
-    margin:8px 16px;
-    position:absolute;
-    display: inline-block;
+
+.nav-item{
+    height: 100%;
+    margin: 0;
+    display: block;
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
 }
-.nav-link{
-    color:lightgray;
+
+span{
+    font-size: larger;
+    color: #EBC7E8;
+    font-weight: 900;
+    margin-left: 10px;
+    margin-right: auto;
+    font-family: "Kaushan Script"
 }
-.name{
-    font-family: Roboto;
+
+.nav-item:hover{
+    background-color: #EBC7E8;
+    color: rgb(74, 74, 74);
 }
+
+
+.main{
+    position:relative;
+    text-align:center;
+    background-color:#EBC7E8;
+    color:#E80F88;
+}
+
 .me{
     text-align: center;
     padding:5%;
@@ -30,16 +64,10 @@ h1{
     font-weight:bold;
 }
 
-.first{
-    position:relative;
-    text-align:center;
-    background-color:#EBC7E8;
-    color:#E80F88;
-}
-
 .mountain{
     width:400px;
 }
+
 .cloud{
     position:absolute;
     width:200px;
@@ -52,14 +80,17 @@ h1{
 .cloud2{
     left:30px;
 }
+
 h2{
     color:#E80F88;
     font-weight:600;
 }
+
 #about{
     padding-top:20px;
     text-align: center;
 }
+
 .mypic{
     display: block;
     width:175px;
@@ -67,54 +98,66 @@ h2{
     margin-right:auto;
     border-radius:87px;
 }
+
 .bio{
     padding:2% 20%;
 }
+
 .aboutme{
     font-size:20px;
     color: rgb(107, 107, 107);
 }
+
 hr{
     border-top: 10px dotted rgb(126, 126, 126);
     width:15%;
     margin:auto;
 }
+
 #myskills{
     padding:3% 20%;
     text-align: center;
 }
+
 .skilldiv{
     margin-top:50px;
     text-align: left;
 }
-.frontend{
-    font-size:17px;
-    color: rgb(107, 107, 107);
-}
-.design{
-    font-size:17px;
-    color: rgb(107, 107, 107);
-}
+
 h3{
     color:#E80F88;
     font-weight:500;
 }
+
+.frontend{
+    font-size:17px;
+    color: rgb(107, 107, 107);
+}
+
+.design{
+    font-size:17px;
+    color: rgb(107, 107, 107);
+}
+
 .skill-img{
     width:100px;
 }
+
 .simg1{
     margin-right:30px;
-    margin-bottom:50px;
     float:left;
 }
+
 .simg2{
     margin-left:30px;
     float:right;
 }
+
 #contact{
     margin:7% 30%;
     text-align:center;
 }
+
 .contactme{
     padding:5px 10px;
     color:white;
@@ -125,15 +168,18 @@ h3{
     transition:0.3s;
     text-decoration: none;
 }
+
 .contactme:hover{
     color:rgb(60, 151, 255);
     background-color:#c1006a;
 }
+
 .footer{
     padding:1% 30%;
     text-align: center;
     background-color: #b80065;
 }
+
 .social-icons{
     text-decoration: none;
     color:white;
@@ -141,20 +187,45 @@ h3{
     margin-right:10px;
 }
 
-@media (max-width:1270px){
+@media screen and (max-width:1270px){
     .skilldiv{
         text-align:center;
     }
     .simg1{
+        margin-left: auto;
+        margin-right: auto;
         float:none;
     }
     .simg2{
+        margin-left: auto;
+        margin-right: auto;
         float:none;
     }
 }
 
-@media (max-width:600px){
+@media (max-width:650px){
     .bio{
         padding:2% 10%;
+    }
+    .mountain{
+        width:300px;
+    }
+    .cloud1{
+        bottom:200px;
+    }
+    .navbar{
+        height:auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    span{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-item{
+        padding: 6px 0;
+        text-align: center;
+        width: 100%;
     }
 }
